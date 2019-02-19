@@ -60,6 +60,18 @@
 											</div>
 										</div>
 										<input type="text" name="other-name" data-callback="storeState"  data-conv-question="{name}:10, é bom falar com você.">
+										<select type="text" name="social" data-callback="storeState"  data-conv-question="Você já me segue em minha rede social?">
+											<option value="facebook">Facebook</option>
+											<option value="linkedin">Linkedin</option>
+										</select>
+										<div data-conv-fork="social">
+												<div data-conv-case="facebook">
+													<input type="text" data-callback="facebook" data-conv-question="Não esquece de curtir minhas fotos!">
+												</div>
+												<div data-conv-case="linkedin">
+													<input type="text" data-callback="linkedin" data-conv-question="Me segue lá!">
+												</div>
+											</div>
 									</div>
 									<div data-conv-fork="que-susto-pensei-que-fosse-ela">
 										<select name="faz-parte-de-igreja" data-callback="storeState" data-conv-question="Bem, pelo visto você não me conhece. Eu sou membro de A Igreja de Jesus Cristo dos Santos dos Últimos Dias desde 2015. Sou casado com a Leny desde 2010. Já morei em diversas cidades, até em Brasília por 3 meses. Já toquei em uma banda juvenil. Eu era contra-baixista. Você faz parte de alguma igreja?.">
@@ -92,13 +104,11 @@
 	<script type="text/javascript" src="dist/jquery.convform.js"></script>
 
 	<script>
-		function google(stateWrapper, ready) {
-			window.open("https://google.com");
-			ready();
+		function facebook() {
+			window.open("https://www.facebook.com/marcosnuneslindolpho");
 		}
-		function bing(stateWrapper, ready) {
-			window.open("https://bing.com");
-			ready();
+		function linkedin() {
+			window.open("https://www.linkedin.com/in/marcos-roberto-nunes-lindolpho-451780132");
 		}
 		var rollbackTo = false;
 		var originalState = false;
