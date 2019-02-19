@@ -96,11 +96,13 @@
 	<script type="text/javascript" src="dist/jquery.convform.js"></script>
 
 	<script>
-		function facebook() {
+		function facebook(stateWrapper, ready) {
 			window.open("https://www.facebook.com/marcosnuneslindolpho");
+			ready();
 		}
-		function linkedin() {
+		function linkedin(stateWrapper, ready) {
 			window.open("https://www.linkedin.com/in/marcos-roberto-nunes-lindolpho-451780132");
+			ready();
 		}
 		var rollbackTo = false;
 		var originalState = false;
