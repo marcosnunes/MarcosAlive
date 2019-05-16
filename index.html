@@ -45,7 +45,10 @@
 										<div data-conv-case="Leny">
 	                                        <input type="text" name="Leny" readonly="true" data-callback="storeState"  data-conv-question="Oi, minha linda! Eu sabia que a gente iria se reencontrar.">
 	                                    </div>
-
+	                                    <div data-conv-case="leny">
+	                                        <input type="text" name="leny" readonly="true" data-callback="storeState"  data-conv-question="Bebezinhaaaa! Estou aqui pra toda a eternidade pra você <3.">
+	                                    </div>
+	                                    
 										<div data-conv-case="Amanda">
 											<select name="amanda" data-callback="storeState" data-conv-question="Você se chama Amanda! É a Amanda minha filha ou é só uma coincidência?">
 												<option value="yes">Filha</option>
@@ -66,13 +69,13 @@
 											   <input name="aniversario" type="text" data-callback="storeState" readonly="true" data-conv-question="O aniversário dela é no mesmo dia em que me batizei. E neste mesmo dia a minha mãe faz aniversário.">
 											</div>
 											<div data-conv-fork="aniversario">
-											    <div data-conv-case="* batizou *">
+											    <div data-conv-case="quando você se batizou?">
 											        <input name="batizei" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu fui batizado em A Igreja de Jesus Cristo dos Santos dos Últimos Dias em 31/10/2015">
 											    </div>
 											<input name="pergunta1" type="text" data-callback="storeState" readonly="true" data-conv-question="Você mora onde?">
 											</div>
 											<div data-conv-fork="perginta1">
-											    <div data-conv-case="* moro *">
+											    <div data-conv-case="moro em">
 											        <input name="lar1" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu costumo dizer que já morei em tanta casa que nem me lembro mais rs rs rs rs rs">
 											    </div>
 											    <div data-conv-case="Jaboticabal">
