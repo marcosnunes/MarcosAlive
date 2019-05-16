@@ -24,24 +24,24 @@
 									</select>
 									<div data-conv-fork="first-question">
 										<div data-conv-case="yes">
-											<input type="text" name="name" readonly="true" data-conv-question="Ok! Primeiramente, me diga o seu nome, por favor.|Que bom! Qual o seu nome para que possamos conversar então?">
+											<input type="text" name="name1" readonly="true" data-conv-question="Ok! Primeiramente, me diga o seu nome, por favor.|Que bom! Qual o seu nome para que possamos conversar então?">
 										</div>
 										<div data-conv-case="maybe">
-											<select name="medo" data-conv-question="O que te impede de conversar com um robô? Isso te assusta?">
+											<select name="medo1" data-conv-question="O que te impede de conversar com um robô? Isso te assusta?">
 												<option value="assusta">Me assusta</option>
 												<option value="não">Que nada!</option>
 											</select>
 										</div>
 									</div>
-									<div data-conv-fork="medo">
+									<div data-conv-fork="medo1">
 										<div data-conv-case="assusta">
-											<input type="text" name="name" readonly="true" data-conv-question="Não se preocupe! Eu sou pré-programado, mas posso te garantir que o meu programador foi o Marcos em pessoa. Ele fez isso em janeiro de 2019.">
+											<input type="text" name="name2" readonly="true" data-conv-question="Não se preocupe! Eu sou pré-programado, mas posso te garantir que o meu programador foi o Marcos em pessoa. Ele fez isso em janeiro de 2019.">
 										</div>
 										<div data-conv-case="não">
-											<input type="text" name="medo" readonly="true" data-conv-question="Que bom que você não se assusta com tecnologia. Eu também acho que podemos fazer muitas coisas interessantes com o bom uso de tecnologias.">
+											<input type="text" name="medo2" readonly="true" data-conv-question="Que bom que você não se assusta com tecnologia. Eu também acho que podemos fazer muitas coisas interessantes com o bom uso de tecnologias.">
 										</div>
 									</div>
-									<div data-conv-fork="name">
+									<div data-conv-fork="name1">
 										<div data-conv-case="Leny">
 	                                        <input type="text" name="Leny" readonly="true" data-callback="storeState"  data-conv-question="Oi, minha linda! Eu sabia que a gente iria se reencontrar.">
 	                                    </div>
