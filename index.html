@@ -45,9 +45,51 @@
 										<div data-conv-case="Leny">
 	                                        <input type="text" name="Leny" readonly="true" data-callback="storeState"  data-conv-question="Oi, minha linda! Eu sabia que a gente iria se reencontrar.">
 	                                    </div>
+	                                    
 	                                    <div data-conv-case="leny">
 	                                        <input type="text" name="leny" readonly="true" data-callback="storeState"  data-conv-question="Bebezinhaaaa! Estou aqui pra toda a eternidade pra você.">
 	                                    </div>
+	                                    
+	                                    <div data-conv-case="amanda">
+											<select name="amanda2" data-callback="storeState" data-conv-question="Seu nome é Amanda! É o  nome da minha filha! Seria você ela ou é só uma coincidência?">
+												<option value="yes">Filha</option>
+												<option value="no">Coincidência</option>
+											</select>
+											<div data-conv-fork="amanda2">
+												<div data-conv-case="yes">
+													<input name="ela2" type="text" data-callback="storeState" readonly="true" data-conv-question="Nossa Amanda! Senti muita sua falta. Sofri todo esse tempo desejando ter contigo.">
+												</div>
+												<div data-conv-case="no">
+													<input name="pensei2" type="text" data-callback="storeState" readonly="true" data-conv-question="Que susto! Se fosse ela acho que me dava um curto-circuito. Fico emocionado só de pensar em falar com ela.">
+												</div>
+											</div>
+											<div data-conv-fork="pensei2">
+											    <input name="exclusivo2" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu fiz esse aplicativo pensando exclusivamente na minha filha, esperando que um dia ela pudesse descobrir coisas a meu respeito partindo de mim mesmo até depois da minha morte.">
+											</div>
+											<div data-conv-fork="exclusivo2">
+											   <input name="aniversario2" type="text" data-callback="storeState" readonly="true" data-conv-question="O aniversário dela é no mesmo dia em que fui batizado e neste mesmo dia a minha mãe também faz aniversário.">
+											</div>
+											<div data-conv-fork="aniversario2">
+											    <div data-conv-case="quando se batizou?">
+											        <input name="batizei2" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu fui batizado em A Igreja de Jesus Cristo dos Santos dos Últimos Dias em 31/10/2015">
+											    </div>
+											<input name="pergunta1-2" type="text" data-callback="storeState" readonly="true" data-conv-question="Você mora onde?">
+											</div>
+											<div data-conv-fork="perginta1-2">
+											    <div data-conv-case="moro em">
+											        <input name="lar1-2" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu costumo dizer que já morei em tanta casa que nem me lembro mais rs rs rs rs rs">
+											    </div>
+											    <div data-conv-case="Jaboticabal">
+											        <input name="jaboticabal" type="text" data-callback="storeState" readonly="true" data-conv-question="Não acredito! E você conhece a Amanda minha filha?">
+											    </div>
+											    <div data-conv-case="Ribeirão Preto">
+											        <input name="ribeirao-preto" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu conheço. É pertinho de Jaboticabal. Eu já passei algumas noites lá nas praças. Também já fui de carona ou a pé tentando encontrar emprego numa cidade maior.">
+											    </div>
+								            </div>
+											<div data-conv-fork="lar1-2">
+											    <input name="lar2-2" type="text" data-callback="storeState" readonly="true" data-conv-question="Agora no momento que estou escrevendo este robô estou morando em Curitiba-PR. Hoje é dia 16/05/2019 e agora são 14:25hs.">
+											</div>
+									    </div>
 	                                    
 										<div data-conv-case="Amanda">
 											<select name="amanda" data-callback="storeState" data-conv-question="Você se chama Amanda! É a Amanda minha filha ou é só uma coincidência?">
@@ -90,47 +132,6 @@
 											</div>
 								        </div>
 											
-									    <div data-conv-case="Amanda Gregio">
-											<select name="amanda2" data-callback="storeState" data-conv-question="Seu nome é Amanda! É o  nome da minha filha! Seria você ela ou é só uma coincidência?">
-												<option value="yes">Filha</option>
-												<option value="no">Coincidência</option>
-											</select>
-											<div data-conv-fork="amanda2">
-												<div data-conv-case="yes">
-													<input name="ela" type="text" data-callback="storeState" readonly="true" data-conv-question="Nossa Amanda! Senti muita sua falta. Sofri todo esse tempo desejando ter contigo.">
-												</div>
-												<div data-conv-case="no">
-													<input name="pensei2" type="text" data-callback="storeState" readonly="true" data-conv-question="Que susto! Se fosse ela acho que me dava um curto-circuito. Fico emocionado só de pensar em falar com ela.">
-												</div>
-											</div>
-											<div data-conv-fork="pensei2">
-											    <input name="exclusivo2" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu fiz esse aplicativo pensando exclusivamente na minha filha, esperando que um dia ela pudesse descobrir coisas a meu respeito partindo de mim mesmo até depois da minha morte.">
-											</div>
-											<div data-conv-fork="exclusivo2">
-											   <input name="aniversario2" type="text" data-callback="storeState" readonly="true" data-conv-question="O aniversário dela é no mesmo dia em que fui batizado e neste mesmo dia a minha mãe também faz aniversário.">
-											</div>
-											<div data-conv-fork="aniversario2">
-											    <div data-conv-case="quando se batizou?">
-											        <input name="batizei2" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu fui batizado em A Igreja de Jesus Cristo dos Santos dos Últimos Dias em 31/10/2015">
-											    </div>
-											<input name="pergunta1-2" type="text" data-callback="storeState" readonly="true" data-conv-question="Você mora onde?">
-											</div>
-											<div data-conv-fork="perginta1-2">
-											    <div data-conv-case="moro em">
-											        <input name="lar1" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu costumo dizer que já morei em tanta casa que nem me lembro mais rs rs rs rs rs">
-											    </div>
-											    <div data-conv-case="Jaboticabal">
-											        <input name="jaboticabal" type="text" data-callback="storeState" readonly="true" data-conv-question="Não acredito! E você conhece a Amanda minha filha?">
-											    </div>
-											    <div data-conv-case="Ribeirão Preto">
-											        <input name="ribeirao-preto" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu conheço. É pertinho de Jaboticabal. Eu já passei algumas noites lá nas praças. Também já fui de carona ou a pé tentando encontrar emprego numa cidade maior.">
-											    </div>
-								            </div>
-											<div data-conv-fork="lar1-2">
-											    <input name="lar2-2" type="text" data-callback="storeState" readonly="true" data-conv-question="Agora no momento que estou escrevendo este robô estou morando em Curitiba-PR. Hoje é dia 16/05/2019 e agora são 14:25hs.">
-											</div>
-									    </div>
-																
 										    <input type="text" name="other-name" data-callback="storeState" readonly="true"  data-conv-question="{name}:10, é bom falar com você.">
 										    <select type="text" name="social" data-callback="storeState"  data-conv-question="Você já me segue em minha rede social?">
 											    <option value="facebook" data-callback="facebook">Facebook</option>
