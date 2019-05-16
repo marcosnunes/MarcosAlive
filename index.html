@@ -59,7 +59,27 @@
 												</div>
 											</div>
 											<div data-conv-fork="que-susto-pensei-que-fosse-ela">
-												<input type="text" data-callback="storeState" readonly="true" data-conv-question="Eu fiz esse aplicativo pensando exclusivamente nela. Esperando que um dia ela pudesse descobrir coisas a meu respeito partindo de mim mesmo até depois da minha morte">
+												<input name="exclusivo-pra-amanda" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu fiz esse aplicativo pensando exclusivamente nela. Esperando que um dia ela pudesse descobrir coisas a meu respeito partindo de mim mesmo até depois da minha morte.">
+											</div>
+											<div data-conv-fork="exclusivo-pra-amanda">
+												<input name="aniversario" type="text" data-callback="storeState" readonly="true" data-conv-question="O aniversário dela é no mesmo dia em que me batizei. E neste mesmo dia a minha mãe faz aniversário.">
+											</div>
+											<div data-conv-fork="aniversario">
+												<input name="pergunta1" type="text" data-callback="storeState" readonly="true" data-conv-question="Você mora onde?">
+											</div>
+											<div data-conv-fork="perginta1">
+											    <div data-conv-case="moro em">
+												    <input name="eu-moro-em" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu costumo dizer que já morei em tanta casa que nem me lembro mais rs rs rs rs rs">
+											    </div>
+											    <div data-conv-case="Jaboticabal">
+												    <input name="jaboticabal" type="text" data-callback="storeState" readonly="true" data-conv-question="Não acredito! E você conhece a Amanda minha filha?">
+											    </div>
+											    <div data-conv-case="Ribeirão Preto">
+												    <input name="ribeirao-preto" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu conheço. É pertinho de Jaboticabal. Eu já passei algumas noites lá nas praças. Também já fui de carona ou a pé tentando encontrar emprego numa cidade maior.">
+											    </div>
+											</div>
+											<div data-conv-fork="eu-moro-em">
+												<input name="estou-morando" type="text" data-callback="storeState" readonly="true" data-conv-question="Agora no momento que estou escrevendo este robô estou morando em Curitiba-PR. Hoje é dia 16/05/2019 e agora são 14:25hs.">
 											</div>
 										</div>
 																
