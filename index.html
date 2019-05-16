@@ -58,68 +58,67 @@
 												<div data-conv-case="no">
 													<input name="pensei" type="text" data-callback="storeState" readonly="true" data-conv-question="Que susto! Pensei que fosse ela. Fico emocionado só de pensar em falar com ela.">
 												</div>
-											    <div data-conv-fork="pensei">
-												    <input name="exclusivo" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu fiz esse aplicativo pensando exclusivamente nela. Esperando que um dia ela pudesse descobrir coisas a meu respeito partindo de mim mesmo até depois da minha morte.">
+											</div>
+											<div data-conv-fork="pensei">
+											    <input name="exclusivo" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu fiz esse aplicativo pensando exclusivamente nela. Esperando que um dia ela pudesse descobrir coisas a meu respeito partindo de mim mesmo até depois da minha morte.">
+											</div>
+											<div data-conv-fork="exclusivo">
+											   <input name="aniversario" type="text" data-callback="storeState" readonly="true" data-conv-question="O aniversário dela é no mesmo dia em que me batizei. E neste mesmo dia a minha mãe faz aniversário.">
+											</div>
+											<div data-conv-fork="aniversario">
+											    <div data-conv-case="* batizou *">
+											        <input name="batizei" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu fui batizado em A Igreja de Jesus Cristo dos Santos dos Últimos Dias em 31/10/2015">
 											    </div>
-											    <div data-conv-fork="exclusivo">
-											       <input name="aniversario" type="text" data-callback="storeState" readonly="true" data-conv-question="O aniversário dela é no mesmo dia em que me batizei. E neste mesmo dia a minha mãe faz aniversário.">
+											<input name="pergunta1" type="text" data-callback="storeState" readonly="true" data-conv-question="Você mora onde?">
+											</div>
+											<div data-conv-fork="perginta1">
+											    <div data-conv-case="* moro *">
+											        <input name="lar1" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu costumo dizer que já morei em tanta casa que nem me lembro mais rs rs rs rs rs">
 											    </div>
-											    <div data-conv-fork="aniversario">
-											        <div data-conv-case="* batizou *">
-											            <input name="batizei" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu fui batizado em A Igreja de Jesus Cristo dos Santos dos Últimos Dias em 31/10/2015">
-											        </div>
-											    <input name="pergunta1" type="text" data-callback="storeState" readonly="true" data-conv-question="Você mora onde?">
+											    <div data-conv-case="Jaboticabal">
+											        <input name="jaboticabal" type="text" data-callback="storeState" readonly="true" data-conv-question="Não acredito! E você conhece a Amanda minha filha?">
 											    </div>
-											    <div data-conv-fork="perginta1">
-											        <div data-conv-case="* moro *">
-											            <input name="lar1" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu costumo dizer que já morei em tanta casa que nem me lembro mais rs rs rs rs rs">
-											        </div>
-											        <div data-conv-case="Jaboticabal">
-											            <input name="jaboticabal" type="text" data-callback="storeState" readonly="true" data-conv-question="Não acredito! E você conhece a Amanda minha filha?">
-											        </div>
-											        <div data-conv-case="Ribeirão Preto">
-											            <input name="ribeirao-preto" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu conheço. É pertinho de Jaboticabal. Eu já passei algumas noites lá nas praças. Também já fui de carona ou a pé tentando encontrar emprego numa cidade maior.">
-											        </div>
-								                </div>
+											    <div data-conv-case="Ribeirão Preto">
+											        <input name="ribeirao-preto" type="text" data-callback="storeState" readonly="true" data-conv-question="Eu conheço. É pertinho de Jaboticabal. Eu já passei algumas noites lá nas praças. Também já fui de carona ou a pé tentando encontrar emprego numa cidade maior.">
+											    </div>
+								            </div>
 											    <div data-conv-fork="lar1">
-												     <input name="lar2" type="text" data-callback="storeState" readonly="true" data-conv-question="Agora no momento que estou escrevendo este robô estou morando em Curitiba-PR. Hoje é dia 16/05/2019 e agora são 14:25hs.">
+											        <input name="lar2" type="text" data-callback="storeState" readonly="true" data-conv-question="Agora no momento que estou escrevendo este robô estou morando em Curitiba-PR. Hoje é dia 16/05/2019 e agora são 14:25hs.">
 											    </div>
 											</div>
-										</div>
-										
 																
-										<input type="text" name="other-name" data-callback="storeState" readonly="true"  data-conv-question="{name}:10, é bom falar com você.">
+										    <input type="text" name="other-name" data-callback="storeState" readonly="true"  data-conv-question="{name}:10, é bom falar com você.">
 										    <select type="text" name="social" data-callback="storeState"  data-conv-question="Você já me segue em minha rede social?">
 											    <option value="facebook" data-callback="facebook">Facebook</option>
 											    <option value="linkedin" data-callback="linkedin">Linkedin</option>
 										    </select>
-									</div>
-    							    <div data-conv-fork="social">
-								        <select name="faz-parte-de-igreja" data-callback="storeState" data-conv-question="Bem, pelo visto você não me conhece. Eu sou membro de A Igreja de Jesus Cristo dos Santos dos Últimos Dias desde 2015. Sou casado com a Leny desde 2010. Já morei em diversas cidades, até em Brasília por 3 meses. Já toquei em uma banda juvenil. Eu era contra-baixista. Você faz parte de alguma igreja?.">
-										    <option value="yes">Sim</option>
-								            <option value="no">Não</option>
-									        <option value="no-no">Não quero falar</option>
-							            </select>
-								    </div>
-						   		    <div data-conv-fork="faz-parte-de-igreja">
-						    	        <div data-conv-case="yes">
-							                <input name="sou-da-igreja" type="text" data-callback="storeState" readonly="true" data-conv-question="Legal! Então você é cristão também.">
-	                                    </div>								
-								        <div data-conv-case="no">
-								            <input name="não-sou-da-igreja" type="text" data-callback="storeState" readonly="true" data-conv-question="Busque sempre em primeiro lugar o Reino dos Céus.">
+									    </div>
+    							        <div data-conv-fork="social">
+								            <select name="faz-parte-de-igreja" data-callback="storeState" data-conv-question="Bem, pelo visto você não me conhece. Eu sou membro de A Igreja de Jesus Cristo dos Santos dos Últimos Dias desde 2015. Sou casado com a Leny desde 2010. Já morei em diversas cidades, até em Brasília por 3 meses. Já toquei em uma banda juvenil. Eu era contra-baixista. Você faz parte de alguma igreja?.">
+										        <option value="yes">Sim</option>
+    								            <option value="no">Não</option>
+									            <option value="no-no">Não quero falar</option>
+							                </select>
 								        </div>
-								        <div data-conv-case="no-no">
-								            <input name="não-falar-de-religião" type="text" data-callback="storeState" readonly="true" data-conv-question="Ok, não se incomode com assuntos que te desagradam.">
-								        </div>
-								    </div>									
-	                            </form>
+						   		        <div data-conv-fork="faz-parte-de-igreja">
+						    	            <div data-conv-case="yes">
+							                    <input name="sou-da-igreja" type="text" data-callback="storeState" readonly="true" data-conv-question="Legal! Então você é cristão também.">
+	                                        </div>								
+								            <div data-conv-case="no">
+								                <input name="não-sou-da-igreja" type="text" data-callback="storeState" readonly="true" data-conv-question="Busque sempre em primeiro lugar o Reino dos Céus.">
+								            </div>
+								            <div data-conv-case="no-no">
+								                <input name="não-falar-de-religião" type="text" data-callback="storeState" readonly="true" data-conv-question="Ok, não se incomode com assuntos que te desagradam.">
+								            </div>
+								        </div>									
+	                                </form>
+	                            </div>
 	                        </div>
 	                    </div>
 	                </div>
 	            </div>
 	        </div>
-	    </div>
-    </section>
+        </section>
     <script type="text/javascript" src="jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="dist/autosize.min.js"></script>
     <script type="text/javascript" src="dist/jquery.convform.js"></script>
